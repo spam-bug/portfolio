@@ -1,10 +1,10 @@
 <script setup>
-import {onMounted, ref} from 'vue';
+import {onMounted, ref} from "vue";
 
 const model = defineModel({
     type: String,
     required: true,
-});
+})
 
 const input = ref(null);
 
@@ -18,9 +18,8 @@ defineExpose({focus: () => input.value.focus()});
 </script>
 
 <template>
-    <input
+    <textarea
         ref="input"
         v-model="model"
-        class="block border border-black focus:border-indigo-500 focus:ring-indigo-500"
-    />
+        class="block min-h-44 border border-black focus:border-indigo-500 focus:ring-indigo-500"></textarea>
 </template>

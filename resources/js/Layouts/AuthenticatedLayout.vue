@@ -23,7 +23,7 @@ onBeforeMount(() => {
 <template>
     <div class="min-h-screen">
         <div :class="{'translate-x-0': showSidebar}"
-             class="h-screen w-64 fixed inset-0 bg-white border-r border-black z-20 -translate-x-full transition-transform duration-300 ease-in-out">
+             class="h-screen w-64 fixed inset-0 bg-white border-r border-black z-50 -translate-x-full transition-transform duration-300 ease-in-out">
             <div class="h-[67px] flex items-center justify-center border-b border-black">
                 <Link :href="route('dashboard')" class="font-climate-crisis text-4xl">Portfolio</Link>
             </div>
@@ -31,11 +31,11 @@ onBeforeMount(() => {
             <SidebarLink :href="route('dashboard')">Dashboard</SidebarLink>
             <SidebarLink :href="route('dashboard')">Projects</SidebarLink>
             <SidebarLink :href="route('dashboard')">Finances</SidebarLink>
-            <SidebarLink :href="route('dashboard')">Settings</SidebarLink>
+            <SidebarLink :href="route('settings.general')">Settings</SidebarLink>
         </div>
 
-        <div :class="{'lg:ml-64': showSidebar}" class="h-[calc(100vh-67px)] transition-all duration-300 ease-in-out">
-            <div class="sticky flex justify-end gap-4 bg-white p-4 border-b border-black z-10">
+        <div :class="{'lg:ml-64': showSidebar}" class="transition-all duration-300 ease-in-out">
+            <div class="sticky inset-0 flex justify-end gap-4 bg-white p-4 border-b border-black z-30">
                 <Dropdown align="right" width="48">
                     <template #trigger>
                         <span class="inline-flex rounded-md">
