@@ -14,12 +14,12 @@ import SidebarLink from "@/Components/SidebarLink.vue";
                     </h3>
                 </div>
 
-                <SidebarLink :href="route('settings.general')">General</SidebarLink>
-                <SidebarLink :href="route('settings.general')">Profile</SidebarLink>
-                <SidebarLink :href="route('settings.general')">Accounts</SidebarLink>
-                <SidebarLink :href="route('settings.general')">Social Media</SidebarLink>
-                <SidebarLink :href="route('settings.general')">Project Showcase</SidebarLink>
-                <SidebarLink :href="route('settings.general')">Finance Sources</SidebarLink>
+                <SidebarLink :href="route('settings.general')" is-active="/settings/general">General</SidebarLink>
+                <SidebarLink :href="route('settings.general')" is-active="profile">Profile</SidebarLink>
+                <SidebarLink :href="route('settings.general')" is-active="accounts">Accounts</SidebarLink>
+                <SidebarLink :href="route('settings.general')" is-active="social">Social Media</SidebarLink>
+                <SidebarLink :href="route('settings.general')" is-active="projects">Project Showcase</SidebarLink>
+                <SidebarLink :href="route('settings.general')" is-active="finance">Finance Sources</SidebarLink>
             </div>
 
             <div class="flex-1 lg:ml-64">

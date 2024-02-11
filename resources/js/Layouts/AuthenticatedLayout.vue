@@ -28,10 +28,10 @@ onBeforeMount(() => {
                 <Link :href="route('dashboard')" class="font-climate-crisis text-4xl">Portfolio</Link>
             </div>
 
-            <SidebarLink :href="route('dashboard')">Dashboard</SidebarLink>
-            <SidebarLink :href="route('dashboard')">Projects</SidebarLink>
-            <SidebarLink :href="route('dashboard')">Finances</SidebarLink>
-            <SidebarLink :href="route('settings.general')">Settings</SidebarLink>
+            <SidebarLink :href="route('dashboard')" is-active="dashboard">Dashboard</SidebarLink>
+            <SidebarLink :href="route('dashboard')" is-active="projects">Projects</SidebarLink>
+            <SidebarLink :href="route('dashboard')" is-active="finances">Finances</SidebarLink>
+            <SidebarLink :href="route('settings.general')" is-active="/settings">Settings</SidebarLink>
         </div>
 
         <div :class="{'lg:ml-64': showSidebar}" class="transition-all duration-300 ease-in-out">
