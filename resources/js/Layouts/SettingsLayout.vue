@@ -27,8 +27,6 @@ import SidebarLink from "@/Components/SidebarLink.vue";
                     <h1 class="text-4xl">
                         <slot name="title"/>
                     </h1>
-
-                    <p class="mt-2">Manage the content of the website.</p>
                 </div>
 
                 <div>

@@ -46,7 +46,7 @@ function discardChanges() {
         <div>
             <h6 class="font-semibold">Contact Section</h6>
             <p class="mt-1">
-                The different information on the client can contact you.
+                The contact information on how the client can reach you.
             </p>
         </div>
 
@@ -86,7 +86,7 @@ function discardChanges() {
             </div>
 
             <div v-show="hasBeenModified" class="flex justify-end gap-2">
-                <SecondaryButton>Discard</SecondaryButton>
+                <SecondaryButton @click="discardChanges">Discard</SecondaryButton>
 
                 <PrimaryButton :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                     Save
